@@ -1,9 +1,8 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * uses printf and output is followed by newline
  *
- * Return 0
+ * Return: always 0
  *
  */
 int main(void)
