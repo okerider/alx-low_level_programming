@@ -2,6 +2,10 @@
 #include "6-abs.c"
 #include <stdio.h>
 
+/**
+ * print_to_98 - natural numbers folloed by newline
+ *
+ */
 void print_to_98(int n)
 {
 	int i;
