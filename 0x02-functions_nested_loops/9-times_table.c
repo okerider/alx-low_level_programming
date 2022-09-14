@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- *  * times_table - times table function
- *   *
- *    */
+ * times_table - times table function
+ *
+ */
 void times_table(void)
 {
 	int i;
@@ -24,7 +24,7 @@ void times_table(void)
 				_putchar(' ');
 				_putchar(' ');
 				_putchar(prod + '0');
-																						} else
+			} else
 			{
 				_putchar(',');
 				_putchar(' ');
