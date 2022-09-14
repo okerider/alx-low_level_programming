@@ -5,6 +5,8 @@
 /**
  * print_to_98 - natural numbers folloed by newline
  *
+ * @n: character to compare
+ * 
  */
 void print_to_98(int n)
 {
