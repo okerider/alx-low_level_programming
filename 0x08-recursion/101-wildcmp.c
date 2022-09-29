@@ -1,6 +1,6 @@
 #include "main.h"
 
-int bandersnatch(char *s1, char *s2);
+int computer(char *s1, char *s2);
 char *move(char *s2);
 
 /**
@@ -60,21 +60,21 @@ int wildcmp(char *s1, char *s2)
 			return (1);
 		if (*s1 == *s2)
 			sum += wildcmp(s1 + 1, s2 + 1);
-		sum += bandersnatch(s1 + 1, s2);
+		sum += computer(s1 + 1, s2);
 		return (!!sum);
 	}
 	return (0);
 }
 
 /**
- * bandersnatch - checks recursively for all the paths when the
+ * computer - checks recursively for all the paths when the
  * characters are equal
  * @s1: first string
  * @s2: second string
  *
  * Return: return value of wildcmp() or of itself
  */
-int bandersnatch(char *s1, char *s2)
+int computer(char *s1, char *s2)
 {
 	/**
 	 * if we reached the end of s1, return 0
@@ -85,7 +85,7 @@ int bandersnatch(char *s1, char *s2)
 		return (0);
 	if (*s1 == *s2)
 		return (wildcmp(s1, s2));
-	return (bandersnatch(s1 + 1, s2));
+	return (computer(s1 + 1, s2));
 }
 
 /**
