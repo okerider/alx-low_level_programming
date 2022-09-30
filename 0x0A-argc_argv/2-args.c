@@ -1,14 +1,13 @@
-#include <stdio.h>
 #include "main.h"
-
+#include <stdio.h>
+#define UNUSED(x) (void)(x)
 /**
- *   main - prints all arguments it receives
- *   @argc: number of arguments
- *   @argv: array of arguments
- *   Return: Always 0 (Success)
+ * main - main function
+ * @argc: argumentc
+ * @argv: vector of arguments
+ *Return: always 0
  */
-
-int main(int argc, char *argv[])
+int main(int argc, char  *argv[])
 {
 	int i;
 
@@ -16,6 +15,5 @@ int main(int argc, char *argv[])
 	{
 		printf("%s\n", argv[i]);
 	}
-
 	return (0);
 }
